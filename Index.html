@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misc Exerxise 1</title>
+
+    <style>
+
+    .item {
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one {
+        background-color: blue;
+        grid-row: span 2
+    }
+
+    .two {
+        background-color:blueviolet;
+        grid-column: span 2
+    
+    }
+
+    .three {
+        background-color:yellow;
+        grid-column-start:-2;
+        grid-column-end: -1;
+    
+    }
+
+
+
+
+    .container {
+        height:100vh;
+        display:grid;
+        gap:3rem;
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-rows: .5fr .5fr;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one item"><h1>1</h1></div>
+        <div class="two item"><h1>2</h1></div>
+        <div class="three item"><h1>3</h1></div>
+
+    </div>
+</body>
+</html>
